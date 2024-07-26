@@ -16,6 +16,6 @@ cd my-app
 npm run dev
 ```
 ### Basic Routing
--foldername/page.jsx
+- foldername/page.jsx
 ### dynamic Routing
--[foldername]/page.jsx
+- [foldername]/page.jsx
