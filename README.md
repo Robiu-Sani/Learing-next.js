@@ -35,6 +35,7 @@ npm run dev
   ##### dynamic navigations
   '<Link href={`/pathname/${dynamicurl}`}>details</Link>'<br/>
   first get a props name is 'params' like const functionname({params}){ other things} <br/>
+  - concole.log(params.dynamicFolderName)
   - this params we get from next js<br/>
   ##### other way
   import { useParams } from "next/navigation";<br/>
