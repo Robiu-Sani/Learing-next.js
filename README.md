@@ -15,7 +15,12 @@ npx create-next-app@latest
 cd my-app
 npm run dev
 ```
+#### Roals
+- We have to add "use client" for which component we want to add any extra function.
 ### Basic Routing
 - foldername/page.jsx
+  for add link
+-  import Link from "next/link";
+- <Link href={`/home`}>home</Link>
 ### dynamic Routing
 - [foldername]/page.jsx
