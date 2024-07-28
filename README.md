@@ -16,7 +16,8 @@ cd my-app
 npm run dev
 ```
 #### Roals
-- We have to add "use client" for which component we want to add any extra function.
+- We have to add "use client" top of the function for which component we want to add any extra function. like = <br/>
+"use client";
 ### Basic Routing
 - foldername/page.jsx
 
