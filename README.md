@@ -21,6 +21,7 @@ npm run dev
 #### Roals
 - We have to add "use client" top of the function for which component we want to add any extra function. like = <br/>
 "use client";
+- in nextjs Layout.js is working like react root component
 ### Basic Routing
 - foldername/page.jsx
 
