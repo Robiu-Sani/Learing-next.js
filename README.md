@@ -18,6 +18,8 @@ npm run dev
 #### Folder Rools
 - every fulder name will be a route and there must have to be page.js/tsx/jsx
 - if i don't need router then i have to create foulder name in a first brecket like = (foulder name)
+- for dynamic route! foldername will be like [foldername]
+- for all segment dynamic route like /dynamic/otherroute ! foldername will be like [...foldername]
 #### Roals
 - We have to add "use client" top of the function for which component we want to add any extra function. like = <br/>
 "use client";
