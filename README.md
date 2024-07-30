@@ -20,6 +20,13 @@ npm run dev
 - if i don't need router then i have to create foulder name in a first brecket like = (foulder name)
 - for dynamic route! foldername will be like [foldername]
 - for all segment dynamic route like /dynamic/otherroute ! foldername will be like [...foldername]
+#### File Rools
+- fro every folder == page.jsx
+- for root file == layout.jsx
+- for loading == loading.jsx
+- for error == error.jsx
+- private route == middleware.jsx
+- for env file == .env.local and excess  data process.env.DB_HOST
 #### Roals
 - We have to add "use client" top of the function for which component we want to add any extra function. like = <br/>
 "use client";
