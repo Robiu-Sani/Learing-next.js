@@ -56,3 +56,73 @@ npm run dev
   ##### to get url path
   import { usePathname } from "next/navigation";<br/>
   const pathName = usePathname();<br/>
+
+
+
+
+  ## Error page 
+  ```
+"use client";
+import React from "react";
+
+export default function Error() {
+  return <div>Eerror</div>;
+}
+```
+  ## Loading page 
+  ```
+import React from "react";
+
+export default function loading() {
+  return <div>loading</div>;
+}
+```
+  ## middle ware page page 
+  ```
+import { NextResponse } from "next/server";
+
+// This function can be marked `async` if using `await` inside
+export function middleware(request) {
+  //this is the path where i want to sent user
+  return NextResponse.redirect(new URL("/home", request.url)); // it will change url path
+  //return NextResponse.rewrite(new URL("/sdfsd", request.url)); // it will not change url path
+
+  // there you can use any condition also.
+  //   for geting cookies
+  // const cookies = requesr.cookies.get('token')
+}
+
+// See "Matching Paths" below to learn more
+export const config = {
+  matcher: "/about/:path*", //
+};
+
+// export const config = {
+//     matcher: ['/about/:path*', '/dashboard/:path*'],
+//   }
+
+```
+
+  ## data fetching
+  ```
+import React from "react";
+
+const getPost = async () => {
+  const res = await fetch("https://restcountries.com/v3.1/all");
+  const data = await res.json();
+  return data;
+};
+
+const getpostpage = async () => {
+  const alldata = await getPost();
+  return (
+    <div>
+      {alldata?.map((data, idx) => (
+        <p key={idx}>{data.name.common}</p>
+      ))}
+    </div>
+  );
+};
+export default getpostpage;
+
+```
