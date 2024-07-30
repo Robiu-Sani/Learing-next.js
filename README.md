@@ -36,6 +36,7 @@ npm run dev
 
 ### dynamic Routing
 - [foldername]/page.jsx
+- [...foldername]/page.jsx
 
 ### Routiing navigations
   ##### simple navigations
