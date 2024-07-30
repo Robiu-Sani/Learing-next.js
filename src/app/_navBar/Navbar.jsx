@@ -18,7 +18,7 @@ export default function Navbar() {
           <Link href={`/`}>back</Link>
         </li>
         <li>
-          <Link href={`/home`}>home</Link>
+          <Link href={`/dataFetch`}>dataFetch</Link>
         </li>
         <button onClick={() => router.push("/home")}>go home</button>
       </ul>
